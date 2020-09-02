@@ -1,0 +1,67 @@
+<!-- SMP Icon Widget -->
+<div class="button-strip" id="{{coupon_title|raw}}">
+<div class="nav" id="{{uc_id}}">
+  <div class="nav__item">
+   <a href="{{first_link}}"><button class="active">
+        <i class="{{first_icon}} icon widget"></i>
+        <span class="text" data-title="{{first_icon_title|raw}}">{{first_icon_title|raw}}</span>
+      </button></a>
+  </div>
+
+
+  <div class="nav__item mobile-hide">
+    <button class="collapsed" data-toggle="collapse" data-target="{{second_link}}" aria-expanded="true" aria-controls="{{contact_link_id|raw}}">
+        <i class="{{second_icon}} icon widget"></i>
+        <span class="text" data-title="{{second_icon_title|raw}}">{{second_icon_title|raw}}</span>
+      </button>
+  </div>
+
+    <div class="nav__item desktop-hide">
+      <a href="tel:5122020920"><button>
+        <i class="{{second_icon}} icon widget"></i>
+        <span class="text" data-title="{{second_icon_title|raw}}">{{second_icon_title|raw}}</span>
+      </button></a>
+  </div>
+
+
+  <div class="nav__item">
+    <button class="collapsed" data-toggle="collapse" data-target="{{third_link}}" aria-expanded="false" aria-controls="{{text_link_id|raw}}">
+        <i class="{{third_icon}} icon widget"></i>
+        <span class="text" data-title="{{third_icon_title|raw}}">{{third_icon_title|raw}}</span>
+      </button>
+  </div>
+
+
+  <div class="nav__item">
+    <button class="collapsed" data-toggle="collapse" data-target="{{fourth_link}}" aria-expanded="false" aria-controls="{{email_link_id|raw}}">
+        <i class="{{fourth_icon}} icon widget"></i>
+        <span class="text" data-title="{{fourth_icon_title|raw}}">{{fourth_icon_title|raw}}</span>
+      </button>
+  </div>
+
+  <div class="nav__item">
+    <a target="_blank" href="{{fifth_link}}"><button>
+        <i class="{{fifth_icon}} icon widget"></i>
+        <span class="text" data-title="{{fifth_icon_title|raw}}">{{fifth_icon_title|raw}}</span>
+      </button></a>
+  </div>
+  <div class="nav__active-indicator"></div>
+
+</div>
+
+<div class="collapse mobile-hide" data-parent="#{{coupon_title|raw}}" id="{{contact_link_id|raw}}">
+  <div class="card card-body contact-icon">
+  {{contact_information|raw}}
+  </div>
+</div>
+<div class="collapse" data-parent="#{{coupon_title|raw}}" id="{{text_link_id|raw}}">
+  <div class="card card-body">
+   {{text_form_shortcode|raw}}
+  </div>
+</div>
+<div class="collapse" data-parent="#{{coupon_title|raw}}" id="{{email_link_id|raw}}">
+  <div class="card card-body">
+    {{email_form_shortcode|raw}}
+  </div>
+</div>
+</div>
